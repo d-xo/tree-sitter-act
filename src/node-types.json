@@ -1,0 +1,1170 @@
+[
+  {
+    "type": "assignment",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "multi_assign",
+          "named": true
+        },
+        {
+          "type": "type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "atom",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "behaviour",
+    "named": true,
+    "fields": {
+      "contract": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      },
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "case_entry",
+          "named": true
+        },
+        {
+          "type": "cases",
+          "named": true
+        },
+        {
+          "type": "ensures",
+          "named": true
+        },
+        {
+          "type": "iff",
+          "named": true
+        },
+        {
+          "type": "interface",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "bool",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "case_entry",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "returns",
+          "named": true
+        },
+        {
+          "type": "storage",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "cases",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "case_entry",
+          "named": true
+        },
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "constructor",
+    "named": true,
+    "fields": {
+      "contract": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "creates",
+          "named": true
+        },
+        {
+          "type": "ensures",
+          "named": true
+        },
+        {
+          "type": "iff",
+          "named": true
+        },
+        {
+          "type": "interface",
+          "named": true
+        },
+        {
+          "type": "invariants",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "creates",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "assignment",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "defn",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ensures",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "env",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "bool",
+          "named": true
+        },
+        {
+          "type": "env",
+          "named": true
+        },
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "storage_location",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "iff",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "interface",
+    "named": true,
+    "fields": {
+      "args": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "parameter_list",
+            "named": true
+          }
+        ]
+      },
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "invariants",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "mapping",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "atom",
+          "named": true
+        },
+        {
+          "type": "type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "mapping_lookup",
+    "named": true,
+    "fields": {
+      "indices": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "[",
+            "named": false
+          },
+          {
+            "type": "]",
+            "named": false
+          },
+          {
+            "type": "expression",
+            "named": true
+          }
+        ]
+      },
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "multi_assign",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "defn",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "parameter_declaration",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "parameter_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "parameter_declaration",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "returns",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "transition",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "storage",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "storage_entry",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "storage_entry",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "storage_location",
+          "named": true
+        },
+        {
+          "type": "storage_update",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "storage_location",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "mapping_lookup",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "storage_update",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "storage_location",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "transition",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "behaviour",
+          "named": true
+        },
+        {
+          "type": "constructor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "type",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "atom",
+          "named": true
+        },
+        {
+          "type": "mapping",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": " ",
+    "named": false
+  },
+  {
+    "type": "%",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": "*",
+    "named": false
+  },
+  {
+    "type": "+",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "-",
+    "named": false
+  },
+  {
+    "type": "/",
+    "named": false
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": ":=",
+    "named": false
+  },
+  {
+    "type": "<",
+    "named": false
+  },
+  {
+    "type": "<=",
+    "named": false
+  },
+  {
+    "type": "=/=",
+    "named": false
+  },
+  {
+    "type": "==",
+    "named": false
+  },
+  {
+    "type": "=>",
+    "named": false
+  },
+  {
+    "type": ">",
+    "named": false
+  },
+  {
+    "type": ">=",
+    "named": false
+  },
+  {
+    "type": "BLOCKHASH",
+    "named": false
+  },
+  {
+    "type": "BLOCKNUMBER",
+    "named": false
+  },
+  {
+    "type": "CALLDEPTH",
+    "named": false
+  },
+  {
+    "type": "CALLER",
+    "named": false
+  },
+  {
+    "type": "CALLVALUE",
+    "named": false
+  },
+  {
+    "type": "CHAINID",
+    "named": false
+  },
+  {
+    "type": "COINBASE",
+    "named": false
+  },
+  {
+    "type": "DIFFICULTY",
+    "named": false
+  },
+  {
+    "type": "GASLIMIT",
+    "named": false
+  },
+  {
+    "type": "NONCE",
+    "named": false
+  },
+  {
+    "type": "ORIGIN",
+    "named": false
+  },
+  {
+    "type": "THIS",
+    "named": false
+  },
+  {
+    "type": "TIMESTAMP",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "^",
+    "named": false
+  },
+  {
+    "type": "address",
+    "named": false
+  },
+  {
+    "type": "and",
+    "named": false
+  },
+  {
+    "type": "behaviour",
+    "named": false
+  },
+  {
+    "type": "bool",
+    "named": false
+  },
+  {
+    "type": "bytes",
+    "named": false
+  },
+  {
+    "type": "bytes1",
+    "named": false
+  },
+  {
+    "type": "bytes10",
+    "named": false
+  },
+  {
+    "type": "bytes11",
+    "named": false
+  },
+  {
+    "type": "bytes12",
+    "named": false
+  },
+  {
+    "type": "bytes13",
+    "named": false
+  },
+  {
+    "type": "bytes14",
+    "named": false
+  },
+  {
+    "type": "bytes15",
+    "named": false
+  },
+  {
+    "type": "bytes16",
+    "named": false
+  },
+  {
+    "type": "bytes17",
+    "named": false
+  },
+  {
+    "type": "bytes18",
+    "named": false
+  },
+  {
+    "type": "bytes19",
+    "named": false
+  },
+  {
+    "type": "bytes2",
+    "named": false
+  },
+  {
+    "type": "bytes20",
+    "named": false
+  },
+  {
+    "type": "bytes21",
+    "named": false
+  },
+  {
+    "type": "bytes22",
+    "named": false
+  },
+  {
+    "type": "bytes23",
+    "named": false
+  },
+  {
+    "type": "bytes24",
+    "named": false
+  },
+  {
+    "type": "bytes25",
+    "named": false
+  },
+  {
+    "type": "bytes26",
+    "named": false
+  },
+  {
+    "type": "bytes27",
+    "named": false
+  },
+  {
+    "type": "bytes28",
+    "named": false
+  },
+  {
+    "type": "bytes29",
+    "named": false
+  },
+  {
+    "type": "bytes3",
+    "named": false
+  },
+  {
+    "type": "bytes30",
+    "named": false
+  },
+  {
+    "type": "bytes31",
+    "named": false
+  },
+  {
+    "type": "bytes32",
+    "named": false
+  },
+  {
+    "type": "bytes4",
+    "named": false
+  },
+  {
+    "type": "bytes5",
+    "named": false
+  },
+  {
+    "type": "bytes6",
+    "named": false
+  },
+  {
+    "type": "bytes7",
+    "named": false
+  },
+  {
+    "type": "bytes8",
+    "named": false
+  },
+  {
+    "type": "bytes9",
+    "named": false
+  },
+  {
+    "type": "case ",
+    "named": false
+  },
+  {
+    "type": "constructor of",
+    "named": false
+  },
+  {
+    "type": "creates",
+    "named": false
+  },
+  {
+    "type": "ensures",
+    "named": false
+  },
+  {
+    "type": "false",
+    "named": false
+  },
+  {
+    "type": "identifier",
+    "named": true
+  },
+  {
+    "type": "iff",
+    "named": false
+  },
+  {
+    "type": "int",
+    "named": false
+  },
+  {
+    "type": "int104",
+    "named": false
+  },
+  {
+    "type": "int112",
+    "named": false
+  },
+  {
+    "type": "int120",
+    "named": false
+  },
+  {
+    "type": "int128",
+    "named": false
+  },
+  {
+    "type": "int136",
+    "named": false
+  },
+  {
+    "type": "int144",
+    "named": false
+  },
+  {
+    "type": "int152",
+    "named": false
+  },
+  {
+    "type": "int16",
+    "named": false
+  },
+  {
+    "type": "int160",
+    "named": false
+  },
+  {
+    "type": "int168",
+    "named": false
+  },
+  {
+    "type": "int178",
+    "named": false
+  },
+  {
+    "type": "int184",
+    "named": false
+  },
+  {
+    "type": "int192",
+    "named": false
+  },
+  {
+    "type": "int200",
+    "named": false
+  },
+  {
+    "type": "int208",
+    "named": false
+  },
+  {
+    "type": "int216",
+    "named": false
+  },
+  {
+    "type": "int224",
+    "named": false
+  },
+  {
+    "type": "int232",
+    "named": false
+  },
+  {
+    "type": "int24",
+    "named": false
+  },
+  {
+    "type": "int240",
+    "named": false
+  },
+  {
+    "type": "int248",
+    "named": false
+  },
+  {
+    "type": "int256",
+    "named": false
+  },
+  {
+    "type": "int32",
+    "named": false
+  },
+  {
+    "type": "int40",
+    "named": false
+  },
+  {
+    "type": "int48",
+    "named": false
+  },
+  {
+    "type": "int56",
+    "named": false
+  },
+  {
+    "type": "int64",
+    "named": false
+  },
+  {
+    "type": "int72",
+    "named": false
+  },
+  {
+    "type": "int8",
+    "named": false
+  },
+  {
+    "type": "int80",
+    "named": false
+  },
+  {
+    "type": "int88",
+    "named": false
+  },
+  {
+    "type": "int96",
+    "named": false
+  },
+  {
+    "type": "interface",
+    "named": false
+  },
+  {
+    "type": "invariants",
+    "named": false
+  },
+  {
+    "type": "mapping",
+    "named": false
+  },
+  {
+    "type": "not",
+    "named": false
+  },
+  {
+    "type": "number",
+    "named": true
+  },
+  {
+    "type": "of",
+    "named": false
+  },
+  {
+    "type": "or",
+    "named": false
+  },
+  {
+    "type": "returns",
+    "named": false
+  },
+  {
+    "type": "storage",
+    "named": false
+  },
+  {
+    "type": "string",
+    "named": false
+  },
+  {
+    "type": "true",
+    "named": false
+  },
+  {
+    "type": "uint",
+    "named": false
+  },
+  {
+    "type": "uint104",
+    "named": false
+  },
+  {
+    "type": "uint112",
+    "named": false
+  },
+  {
+    "type": "uint120",
+    "named": false
+  },
+  {
+    "type": "uint128",
+    "named": false
+  },
+  {
+    "type": "uint136",
+    "named": false
+  },
+  {
+    "type": "uint144",
+    "named": false
+  },
+  {
+    "type": "uint152",
+    "named": false
+  },
+  {
+    "type": "uint16",
+    "named": false
+  },
+  {
+    "type": "uint160",
+    "named": false
+  },
+  {
+    "type": "uint168",
+    "named": false
+  },
+  {
+    "type": "uint178",
+    "named": false
+  },
+  {
+    "type": "uint184",
+    "named": false
+  },
+  {
+    "type": "uint192",
+    "named": false
+  },
+  {
+    "type": "uint200",
+    "named": false
+  },
+  {
+    "type": "uint208",
+    "named": false
+  },
+  {
+    "type": "uint216",
+    "named": false
+  },
+  {
+    "type": "uint224",
+    "named": false
+  },
+  {
+    "type": "uint232",
+    "named": false
+  },
+  {
+    "type": "uint24",
+    "named": false
+  },
+  {
+    "type": "uint240",
+    "named": false
+  },
+  {
+    "type": "uint248",
+    "named": false
+  },
+  {
+    "type": "uint256",
+    "named": false
+  },
+  {
+    "type": "uint32",
+    "named": false
+  },
+  {
+    "type": "uint40",
+    "named": false
+  },
+  {
+    "type": "uint48",
+    "named": false
+  },
+  {
+    "type": "uint56",
+    "named": false
+  },
+  {
+    "type": "uint64",
+    "named": false
+  },
+  {
+    "type": "uint72",
+    "named": false
+  },
+  {
+    "type": "uint8",
+    "named": false
+  },
+  {
+    "type": "uint80",
+    "named": false
+  },
+  {
+    "type": "uint88",
+    "named": false
+  },
+  {
+    "type": "uint96",
+    "named": false
+  }
+]
