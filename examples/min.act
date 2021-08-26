@@ -1,0 +1,5 @@
+// hi
+behaviour transfer of ERC20
+interface transfer(address to, uint amt)
+
+returns true

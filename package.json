@@ -1,0 +1,19 @@
+{
+  "name": "treesitter-act",
+  "version": "0.0.1",
+  "description": "tree-sitter grammar for the act smart contract specification language",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node-gyp rebuild"
+  },
+  "author": "",
+  "license": "AGPL3+",
+  "gypfile": true,
+  "tree-sitter": [
+    {
+      "scope": "source.act",
+      "file-types": [ "act" ]
+    }
+  ]
+}
