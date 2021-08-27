@@ -131,6 +131,45 @@
         }
       ]
     },
+    "pre_post": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "pre("
+            },
+            {
+              "type": "SYMBOL",
+              "name": "storage_location"
+            },
+            {
+              "type": "STRING",
+              "value": ")"
+            }
+          ]
+        },
+        {
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "post("
+            },
+            {
+              "type": "SYMBOL",
+              "name": "storage_location"
+            },
+            {
+              "type": "STRING",
+              "value": ")"
+            }
+          ]
+        }
+      ]
+    },
     "storage_location": {
       "type": "CHOICE",
       "members": [
@@ -686,6 +725,10 @@
         {
           "type": "SYMBOL",
           "name": "env"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pre_post"
         },
         {
           "type": "PREC_LEFT",

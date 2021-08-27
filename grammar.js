@@ -29,6 +29,7 @@ module.exports = grammar({
     comment: $ => token(seq('//', /.*/)),
 
     mapping_lookup : $ => seq(field('name', $.identifier), field('indices', repeat1(seq('[', $.expression, ']')))),
+    pre_post : $ => choice(seq('pre(', $.storage_location, ')'), seq('post(', $.storage_location, ')')),
     storage_location : $ => choice($.identifier, $.mapping_lookup),
     storage_update : $ => seq($.storage_location, '=>', $.expression),
 
@@ -71,6 +72,7 @@ module.exports = grammar({
       $.number,
       $.bool,
       $.env,
+      $.pre_post,
 
       // booleans
       prec.left(1, seq($.expression, 'and', $.expression)),

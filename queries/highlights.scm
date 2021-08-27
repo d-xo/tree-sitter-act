@@ -31,14 +31,19 @@
 "storage" @keyword
 "invariants" @keyword
 "ensures" @keyword
+(pre_post) @operator
 
 (atom) @type
 (mapping "mapping" @type)
 
-(assignment (type) (identifier) @variable.parameter)
+(assignment (type) (identifier) @variable.parameter*)
 
 (behaviour
   name: (identifier) @function.method
+  contract: (identifier) @contract
+)
+
+(constructor
   contract: (identifier) @contract
 )
 
@@ -52,7 +57,6 @@
 
 (storage_location (identifier) @variable.parameter)
 (storage_location (mapping_lookup (identifier) @variable.parameter))
-(interface) @function
 (comment) @comment
 (number) @number
 (bool) @constant
