@@ -25,6 +25,7 @@
 "interface" @keyword
 "of" @keyword
 (iff "iff" @keyword)
+(iff_in_range "iff in range" @keyword)
 "creates" @keyword
 "returns" @keyword
 "case " @keyword

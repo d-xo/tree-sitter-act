@@ -36,7 +36,7 @@ module.exports = grammar({
     behaviour: $ => seq(
       'behaviour', field('name', $.identifier), 'of', field('contract', $.identifier),
       $.interface,
-      optional($.iff),
+      optional(repeat(choice($.iff, $.iff_in_range))),
       choice($.cases, $.case_entry),
       optional($.ensures)
     ),
@@ -44,7 +44,10 @@ module.exports = grammar({
     constructor: $ => seq(
       'constructor of', field('contract', $.identifier),
       $.interface,
-      optional($.iff), optional($.creates), optional($.ensures), optional($.invariants)
+      optional(repeat(choice($.iff, $.iff_in_range))),
+      optional($.creates),
+      optional($.ensures),
+      optional($.invariants)
     ),
 
     interface: $ => seq('interface', field('name', $.identifier), field('args', $.parameter_list)),
@@ -52,6 +55,7 @@ module.exports = grammar({
     parameter_declaration: $ => seq($.type, ' ', $.identifier),
 
     iff: $ => seq('iff', repeat1($.expression)),
+    iff_in_range: $ => seq('iff in range', $.atom, repeat1($.expression)),
     ensures: $ => seq('ensures', repeat1($.expression)),
     invariants: $ => seq('invariants', repeat1($.expression)),
     returns: $ => seq('returns', $.expression),

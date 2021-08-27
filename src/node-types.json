@@ -77,6 +77,10 @@
           "named": true
         },
         {
+          "type": "iff_in_range",
+          "named": true
+        },
+        {
           "type": "interface",
           "named": true
         }
@@ -155,6 +159,10 @@
         },
         {
           "type": "iff",
+          "named": true
+        },
+        {
+          "type": "iff_in_range",
           "named": true
         },
         {
@@ -261,6 +269,25 @@
       "multiple": true,
       "required": true,
       "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "iff_in_range",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "atom",
+          "named": true
+        },
         {
           "type": "expression",
           "named": true
@@ -876,6 +903,10 @@
   },
   {
     "type": "iff",
+    "named": false
+  },
+  {
+    "type": "iff in range",
     "named": false
   },
   {
